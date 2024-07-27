@@ -19,9 +19,6 @@ const loginuser = async (req, res) => {
      return  res.json({ success: false, message: "password is incorrect" });
     }
     const token = createtoken(user._id);
-    res.cookie("token", token, {
-      httpOnly: true,
-    });
     res.json({ success: true, token: token});
   } catch (error) {
     console.log(error);
@@ -82,9 +79,6 @@ const registeruser = async (req, res) => {
 
 
 const cookiedelete=async (req, res) => {
-  res.clearCookie('token', {
-    httpOnly: true,
-  });
   res.json({ success: true, message: 'Logged out' });
 };
 
