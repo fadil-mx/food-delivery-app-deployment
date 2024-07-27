@@ -31,7 +31,7 @@ try{
   }else{
     newurl+="/api/user/register"
   }
-  const response=await axios.post(newurl,data,{withCredentials:true})
+  const response=await axios.post(newurl,data)
   if(response.data.success){
     settoken(response.data.token) ;
     localStorage.setItem("token",response.data.token)
