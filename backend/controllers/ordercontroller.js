@@ -29,8 +29,8 @@ const placeorder = async (req, res) => {
       const session = await stripe.checkout.sessions.create({
         line_items: line_items,
         mode: "payment",
-        success_url: `http://localhost:5174/verify?success=true&orderid=${neworder._id}`,
-        cancel_url: `http://localhost:5174/verify?success=false&orderid=${neworder._id}`,
+        success_url: `https://food-delivery-frontend-r5o9.onrender.com?success=true&orderid=${neworder._id}`,
+        cancel_url: `https://food-delivery-frontend-r5o9.onrender.com?success=false&orderid=${neworder._id}`,
       });
   
       // Sending the session URL to the client
