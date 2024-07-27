@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const List = () => {
-  const url = "https://food-delivery-app-backend-kwz5.onrender.com";
+  const url = "https://food-delivery-backend-slp5.onrender.com";
   const [list, setList] = useState([]);
   
 
