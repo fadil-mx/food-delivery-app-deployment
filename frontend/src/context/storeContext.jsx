@@ -7,7 +7,7 @@ export const storeContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [food_list, setfood_list] = useState([]);
   const [cartitem, setcartitems] = useState({});
-  const url = "adil-mx/food-delivery-app-using-mernstack";
+  const url = "https://food-delivery-app-backend-kwz5.onrender.com";
   const [token, settoken] = useState("");
 
   const addCart = async (id) => {
