@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const add = () => {
-  const url = "adil-mx/food-delivery-app-using-mernstack";
+  const url = "https://food-delivery-app-backend-kwz5.onrender.com";
   const [image, setImage] = React.useState(false);
   const [data, setData] = React.useState({
     name: "",
