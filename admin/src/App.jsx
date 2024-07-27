@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-  const url = "http://localhost:3000";
+  const url = "adil-mx/food-delivery-app-using-mernstack";
 
   return (
     <div>
