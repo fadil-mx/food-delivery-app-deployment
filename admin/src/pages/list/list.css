@@ -1,0 +1,23 @@
+.list{
+    width: 100%;
+}
+.list-table-format{
+    display: grid;
+    grid-template-columns:3fr 3fr 3fr 3fr 1fr 1fr;
+    border: 2px solid rgb(161, 168, 166);
+    padding: 12px 15px;
+    gap: 10px;
+    font-size: 17px;
+    align-items: center;
+ 
+}
+ .title{
+    background-color: rgb(233, 228, 221);
+}
+
+.list-table-format img{
+width: 80px;
+}
+.curser{
+ cursor: pointer;
+}
